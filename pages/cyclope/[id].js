@@ -12,7 +12,9 @@ export default function Demon({demonData}) {
                 </div>
                 <div className={styles.victors}>
                     <ul>
-                        {demonData.victo}
+                        {demonData.victors.map((victor, index) => (
+                            <li key={index}>{`#${++index} - ${victor}`}</li>
+                            ))}
                     </ul>
                 </div>
                 <Link href='/' className={styles.homeLink}><div>home</div></Link>

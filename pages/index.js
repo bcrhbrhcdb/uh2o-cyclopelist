@@ -7,16 +7,15 @@ export default function Home({allDemonsData}) {
     return (
         <Layout>
             <main className={styles.main}>
-                <h1 className={styles.id}>UH2O Cyclopelist</h1>
                 <ul className={styles.list}>
                     {(() => {
-                        return allDemonsData.map(({id, title, author, points}) => (
+                        return allDemonsData.map(({id, title, author, points}, index) => (
                             <li className={styles.listItem} key={title}>
                                 <Link href={`/cyclope/${id}`}>
                                     <div className={styles.cyclope}>
                                         <div className={styles.imageContainer}></div>
                                         <div className={styles.mainContainer}>
-                                            <div className={styles.title}><p>{title}</p></div>
+                                            <div className={styles.title}><p>{`#${++index} - ${title}`}</p></div>
                                             <div>
                                                 <p  className={styles.author}>{author}</p>
                                                 <p  className={styles.points}>{points}c</p>

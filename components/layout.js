@@ -1,4 +1,6 @@
 import Head from "next/head";
+import styles from "../styles/Layout.module.css";
+import Link from "next/link";
 
 const name = "UH2O Cyclopelist"
 
@@ -14,6 +16,10 @@ export default function Layout({children}) {
                 content="Официальный циклополист Водоуранска! Только самые сильные циклопослееры Атова имеются в этом списке!"
             />
         </Head>
+            <nav className={styles.nav}>
+                <Link href='/' className={styles.id}><h1>Cyclopelist</h1></Link>
+                <Link href='/stats-viewer' className={styles.stats}><h2>Stats</h2></Link>
+            </nav>
         {children}
     </div>
 }
