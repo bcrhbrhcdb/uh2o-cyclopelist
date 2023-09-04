@@ -1,0 +1,33 @@
+.main {
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center vertically within the viewport height */
+    text-align: center; /* Center text horizontally */
+    margin: 0 8rem;
+
+    @media (max-width: 1024px) {
+        margin: 0 1rem;
+    }
+}
+
+.homeLink {
+    color: #0083FF;
+    text-decoration: underline;
+}
+
+.cyclope {
+    color: #161616;
+}
+
+.cyclope .title {
+    font-size: 7.5vh;
+}
+
+.cyclope .author {
+    font-size: 4.5vh;
+    color: #FF3434;
+}
+
+.victors {
+
+}
