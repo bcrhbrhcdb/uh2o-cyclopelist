@@ -8,7 +8,7 @@ export default function Demon({demonData}) {
         <Layout>
             <main className={styles.main}>
                 <div className={styles.cyclope}>
-                    <h1 className={styles.title}>{demonData.title}<h2 className={styles.author}> by Riot</h2></h1>
+                    <h1 className={styles.title}>{demonData.title}<h2 className={styles.author}>by {demonData.author}</h2></h1>
                 </div>
                 <div className={styles.victors}>
                     <ul>

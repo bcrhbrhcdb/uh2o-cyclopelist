@@ -34,9 +34,6 @@ export default function Home({allDemonsData}) {
 
 export async function getStaticProps() {
     const allDemonsData = getSortedDemonsData();
-    console.log("allDemonsData - " + allDemonsData)
-    console.log("allDemonsData.length - " + allDemonsData.length)
-
     return {
         props: {
             allDemonsData
