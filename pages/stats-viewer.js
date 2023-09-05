@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import {getAllPlayers} from "../lib/demons";
+import {getAllPlayers} from "../lib/players";
 import styles from "../styles/Stats.module.css";
 
 export default function StatsViewer({players}) {

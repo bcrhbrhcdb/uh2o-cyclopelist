@@ -1,8 +1,8 @@
 .main {
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Center vertically within the viewport height */
     text-align: center; /* Center text horizontally */
+    height: 100vh; /* Center vertically within the viewport height */
     margin: 0 8rem;
 
     @media (max-width: 1024px) {
@@ -17,6 +17,9 @@
 
 .cyclope {
     color: #161616;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text horizontally */
 }
 
 .cyclope .title {
@@ -38,4 +41,21 @@
     font-style: italic;
     font-weight: 600;
     padding-top: 3vh;
+}
+
+.nameAndImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text horizontally */
+}
+
+.imageContainer {
+    width: 10vh;
+    height: 10vh;
+    margin: 8px;
+}
+
+.titleContainer {
+    margin: 8px;
 }

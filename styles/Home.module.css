@@ -3,6 +3,11 @@
     align-items: center;
     height: 100vh; /* Center vertically within the viewport height */
     text-align: center; /* Center text horizontally */
+    margin: 0 8rem;
+
+    @media (max-width: 1024px) {
+        margin: 0 1rem;
+    }
 }
 
 .list {
@@ -16,10 +21,10 @@
 }
 
 .cyclope {
-    width: 70vh;
-    height: 10vh;
+    width: 69vh;
+    height: 90px;
     border: #161616 dashed 1px;
-    margin: 0.4rem 2rem;
+    margin: 8px 2rem;
     display: flex;
     justify-content: space-between; /* To separate the text items */
     padding: 0 1rem; /* Add padding for spacing */
@@ -32,6 +37,9 @@
 
 .cyclope .imageContainer {
     width: 15%;
+    max-height: 195px;
+    max-width: 195px;
+    overflow: hidden; /* Ensure the image stays within the container */
 }
 
 .cyclope .mainContainer {
@@ -43,7 +51,12 @@
 .cyclope .title {
     font-family: 'Prompt', sans-serif;
     font-weight: bolder;
-    font-size: 3vh;
+    font-size: 1.7rem;
+
+    /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+    @media (max-width: 768px) {
+        font-size: 1.1rem; /* Adjust the font size for mobile devices */
+    }
 }
 
 .cyclope .author {
