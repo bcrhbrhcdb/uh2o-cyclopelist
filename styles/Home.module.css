@@ -13,19 +13,14 @@
 .listItem {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .cyclope {
-    width: 25vw;
+    width: 500px;
     height: 90px;
     margin: 10px auto;
     display: flex;
     color: #161616;
-
-    @media (max-width: 1080px) {
-        width: 100vw;
-    }
 }
 
 .cyclope p {
@@ -33,14 +28,10 @@
 }
 
 .cyclope .imageContainer {
-    width: 92px;
-    max-height: 195px;
-    max-width: 195px;
     overflow: hidden; /* Ensure the image stays within the container */
 }
 
 .cyclope .mainContainer {
-    width: 85%;
     text-align: left;
     padding: 0 1.2rem;
 }
