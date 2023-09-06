@@ -21,16 +21,10 @@
     height: 90px;
     margin: 10px auto;
     display: flex;
-    justify-content: space-between; /* To separate the text items */
-    padding: 0 1rem; /* Add padding for spacing */
     color: #161616;
 
     @media (max-width: 1080px) {
         width: 100vw;
-    }
-
-    @media (max-width: 768px) {
-        width: 100vw; /* Further adjust width for smaller screens */
     }
 }
 
