@@ -6,6 +6,16 @@
     margin: 0 auto;
 }
 
+.cyclopeList {
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+
+    @media (max-width: 1000px) {
+        max-width: 100%;
+    }
+}
+
 .list {
     font-size: 1.2rem;
 }
@@ -16,7 +26,9 @@
 }
 
 .cyclope {
-    height: 90px;
+    padding: 10px;
+    width: 600px;
+    height: 120px;
     margin: 10px auto;
     display: flex;
     color: #161616;
@@ -38,7 +50,7 @@
 .cyclope .title {
     font-family: 'Prompt', sans-serif;
     font-weight: bolder;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 
     /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
     @media (max-width: 768px) {
