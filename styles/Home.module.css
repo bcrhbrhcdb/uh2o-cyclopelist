@@ -21,10 +21,9 @@
 }
 
 .cyclope {
-    width: 69vh;
+    width: 55vh;
     height: 90px;
-    border: #161616 dashed 1px;
-    margin: 8px 2rem;
+    margin: 10px 2rem;
     display: flex;
     justify-content: space-between; /* To separate the text items */
     padding: 0 1rem; /* Add padding for spacing */
@@ -36,7 +35,7 @@
 }
 
 .cyclope .imageContainer {
-    width: 15%;
+    width: 92px;
     max-height: 195px;
     max-width: 195px;
     overflow: hidden; /* Ensure the image stays within the container */

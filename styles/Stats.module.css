@@ -2,21 +2,23 @@
     justify-content: center;
     align-items: center;
     height: 100vh; /* Center vertically within the viewport height */
-    text-align: center; /* Center text horizontally */
-    margin: 0 8rem;
-
-    @media (max-width: 1024px) {
-        margin: 0 1rem;
-    }
+    margin: 0 auto;
+    text-align: center;
 }
 
 .playersList {
     margin-top: 1rem;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 32px;
 }
 
 .playersList li {
     margin: 0.15rem 0;
+}
+
+.player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

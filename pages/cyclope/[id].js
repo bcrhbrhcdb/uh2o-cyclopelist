@@ -24,10 +24,13 @@ export default function Demon({demonData}) {
                     </div>
                     <h2 className={styles.author}>by {demonData.author}</h2>
                 </div>
+                <div className={styles.info}>
+                    <h1>Bounty: {demonData.points}<Image src="/images/cyclope-eye.png" alt="Глаз Циклопа" width={48} height={48}/></h1>
+                </div>
                 <div className={styles.victors}>
                     <ul>
                         {demonData.victors.map((victor, index) => (
-                            <li key={index}>{`#${++index} - ${victor}`}</li>
+                            <li key={index}><Link href={`/players/${victor}`}>{`#${++index} - ${victor}`}</Link></li>
                             ))}
                     </ul>
                 </div>
@@ -40,6 +43,8 @@ export default function Demon({demonData}) {
 export function getStaticPaths() {
     const paths = getAllDemonIds();
 
+    console.log(JSON.stringify(paths, 2, null));
+
     return {
         paths,
         fallback: false,
@@ -47,12 +52,11 @@ export function getStaticPaths() {
 }
 
 export function getStaticProps({params}) {
-    console.log("params: " + params);
     const demonData = getDemonData(params.id);
 
     return {
         props: {
-            demonData
-        }
+            demonData,
+        },
     };
 }

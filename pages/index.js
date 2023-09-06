@@ -26,7 +26,7 @@ export default function Home({allDemonsData}) {
                                             <div className={styles.title}><p>{`#${++index} - ${title}`}</p></div>
                                             <div>
                                                 <p  className={styles.author}>{author}</p>
-                                                <p  className={styles.points}>{points}c</p>
+                                                <p  className={styles.points}>{points}<Image src="/images/cyclope-eye.png" alt="Глаз Циклопа" width={16} height={16}/></p>
                                             </div>
                                         </div>
                                     </div>

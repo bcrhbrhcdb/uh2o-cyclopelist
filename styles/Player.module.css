@@ -1,0 +1,44 @@
+.main {
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text horizontally */
+    height: 100vh; /* Center vertically within the viewport height */
+}
+
+.profile {
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text horizontally */
+}
+
+.playerInfo {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: center; /* Center text horizontally */
+}
+
+.playerInfo .hardest {
+    margin: 0 16px;
+}
+
+.profileTitle {
+    font-size: 3.8rem;
+}
+
+.beatenTitle {
+    padding-top: 16px;
+    font-size: 2.8rem;
+}
+
+.levelsCompleted {
+    font-size: 1.5rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    max-width: 900px;
+    margin: 0 auto;
+}

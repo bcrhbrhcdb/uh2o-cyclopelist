@@ -2,12 +2,7 @@
     justify-content: center;
     align-items: center;
     text-align: center; /* Center text horizontally */
-    height: 100vh; /* Center vertically within the viewport height */
-    margin: 0 8rem;
-
-    @media (max-width: 1024px) {
-        margin: 0 1rem;
-    }
+    height: 100%;
 }
 
 .homeLink {
@@ -30,6 +25,13 @@
 
 .cyclope .author {
     font-size: 4.5vh;
+    color: #FF3434;
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+}
+
+.cyclope .info {
+    font-size: 32px;
     color: #FF3434;
     font-family: 'Prompt', sans-serif;
     font-weight: bold;
