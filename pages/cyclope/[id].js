@@ -25,7 +25,7 @@ export default function Demon({demonData}) {
                     <h2 className={styles.author}>by {demonData.author}</h2>
                 </div>
                 <div className={styles.info}>
-                    <h1>Bounty: {demonData.points}<Image src="/images/cyclope-eye.png" alt="Глаз Циклопа" width={48} height={48}/></h1>
+                    <p>Bounty: {demonData.points}<Image src="/images/cyclope-eye.png" alt="Глаз Циклопа" width={32} height={32}/></p>
                 </div>
                 <div className={styles.victors}>
                     <ul>

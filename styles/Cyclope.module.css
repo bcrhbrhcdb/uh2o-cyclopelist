@@ -30,11 +30,11 @@
     font-weight: bold;
 }
 
-.cyclope .info {
-    font-size: 32px;
-    color: #FF3434;
+.info {
+    font-size: 1.5rem;
+    color: #161616;
     font-family: 'Prompt', sans-serif;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .victors {
