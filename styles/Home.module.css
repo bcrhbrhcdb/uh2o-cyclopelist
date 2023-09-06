@@ -27,11 +27,12 @@
 
 .cyclope {
     padding: 10px;
-    width: 600px;
+    width: 500px;
     height: 120px;
     margin: 10px auto;
     display: flex;
     color: #161616;
+    border: 1px dashed #DADADA;
 }
 
 .cyclope p {
