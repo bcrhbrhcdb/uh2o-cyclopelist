@@ -25,10 +25,12 @@
     padding: 0 1rem; /* Add padding for spacing */
     color: #161616;
 
-    /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
     @media (max-width: 1080px) {
-        width: 50vw;
-        height: 120px;
+        width: 100vw;
+    }
+
+    @media (max-width: 768px) {
+        width: 100vw; /* Further adjust width for smaller screens */
     }
 }
 
